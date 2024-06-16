@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* colors and font family used */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightPink: hsl(275, 100%, 97%);
+    --grayishPurple: hsl(292, 16%, 49%);
+    --darkPurple: hsl(292, 42%, 14%);
+    --workSans: "Work Sans", sans-serif;
+}
+
+/* remove default browser settings */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background: var(--lightPink);
+}
+/* background image */
+header {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    height: 12.5rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    height: 31rem;
+    width: 36%;
+    border-radius: 0.8rem;
+    border: 2px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -36%);
+    
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+.row-1{
+    display: flex;
+    margin: 0.4rem 0;
+    padding: 1.6rem 0 1.1rem 2rem;
+
+}
+
+h6{
+    font-family: var(--workSans);
+    cursor: pointer;
+    color: var(--darkPurple);
+    font-weight: 600;
+    font-size: 0.88rem;
+
+}
+h6:hover {
+    color: hsl(293, 67%, 44%);
+}
+
+.icon-toggle {
+    width: 3.4rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.icon-star{
+    width: 1.6rem;
+    margin-right: 0.95rem;
+}
+
+h1{
+    font-family: var(--workSans);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--darkPurple);
+}
+
+.faq-paragraph {
+    display: none;
+}
+
+.faq-paragraph {
+    padding-bottom: 1.2rem;
+    padding-left: 2rem;
+    color: var(--grayishPurple);
+    font-family: var(--workSans);
+    font-weight: 400;
+    width: 95%;
+    margin-bottom: 0.8rem;
+    }
+
+.faq-item {
+   border-bottom: 1px solid hsl(300, 17%, 95%); 
+   margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 80%;
+        top: 50%;
+        left: 45%;
+        transform: translate(-44%, -35%);
+        height: 37rem;
+    }
+    .icon-toggle {
+    width: 3.1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    }
+    h6{
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        width: 80%;
+        top: 50%;
+        left: 45%;
+        transform: translate(-44%, -35%);
+        height: 33.5rem;
+    }
+    .icon-toggle {
+    width: 3.1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    }
+    h6{
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+        top: 50%;
+        left: 45%;
+        transform: translate(-44%, -35%);
+        height: 33.5rem;
+    }
+    .icon-toggle {
+    width: 3.1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    }
+    h6{
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        height: 32rem;
+    }
+    .icon-toggle {
+    width: 2.4rem;
+    padding-right: 0.8rem;
+    cursor: pointer;
+    }
+    h6{
+        font-size: 0.9rem;
+        font-weight: 700;
+        width: 80%;
+        padding-left: 0.8rem;
+    }
+    .row {
+        padding-left: 0.6rem;
+    }
+    .icon-star{
+        width: 1.6rem;
+        margin-right: 0.95rem;
+    }
+    
+    .row-1 {
+        margin-top: 0.45rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .faq-paragraph{
+        padding-left: 1.4rem;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+}
