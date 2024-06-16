@@ -40,7 +40,7 @@ header {
     border-radius: 0.8rem;
     border: 2px;
     position: absolute;
-    top: 40%;
+    top: 43.5%;
     left: 50%;
     transform: translate(-50%, -36%);
     
@@ -205,4 +205,15 @@ h1{
         font-size: 0.8rem;
         line-height: 1.1rem;
     }
+}
+.attribution {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
 }
