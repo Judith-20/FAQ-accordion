@@ -168,6 +168,15 @@ h1{
 }
 
 @media screen and (max-width: 375px) {
+    header {
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        height: 12.5rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
     .card {
         width: 80%;
         top: 50%;
